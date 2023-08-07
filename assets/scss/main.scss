@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'circular_stdmedium';
+    src: url('../fonts/circular-std-medium-500_2-webfont.woff2') format('woff2'),
+         url('../fonts/circular-std-medium-500_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'circular_stdmedium', sans-serif;
+    overflow: hidden;
+}
+
+a {
+    color: var(--bs-body-color);
+}
+
+.jumbotron {
+    min-height: 100vh;
+
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container-fluid,
+    .row {
+        min-height: inherit;
+    }
+
+    .proximamente {
+        margin: 100px 0;
+
+        p {
+            letter-spacing: 2px;
+        }
+    }
+
+    .social,
+    .contacto {
+       .list-inline-item:not(:last-child) {
+            margin-right: 1.6rem;
+       }
+    }
+}
+
+.bg-familia {
+    background: url('../images/bg-familia.webp') center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &::after {
+        position: absolute;
+        bottom: -72px;
+        background: url('../images/decor.webp') center no-repeat;
+        background-size: contain;
+        content: '';
+        width: 100%;
+        height: 184px;
+
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .bg-familia {
+        &::after {
+            bottom: -114px;
+            height: 264px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .bg-familia {
+        &::after {
+            bottom: -150px;
+            height: 352px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .jumbotron {
+        .logo {
+            max-width: 250px;
+        }
+    }
+
+    .bg-familia {
+        &::after {
+            bottom: -150px;
+            height: 366px;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .bg-familia {
+        &::after {
+            bottom: -150px;
+            height: 366px;
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+}
