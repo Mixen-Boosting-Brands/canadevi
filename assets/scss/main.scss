@@ -220,6 +220,10 @@ header {
 
 #logos {
     padding: 60px 0 0;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
 }
 
 footer {
