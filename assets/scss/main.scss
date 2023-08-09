@@ -116,6 +116,10 @@ header {
         }
     }
 
+    .legal {
+        text-transform: none;
+    }
+
     &::before {
         @include background('../images/decor-jumbotron.png', center, contain);
         position: absolute;
