@@ -49,7 +49,6 @@ window.addEventListener('load', function () {
                             $('#nombre').val('');
                             $('#telefono').val('');
                             $('#correo').val('');
-                            $('#mensaje').val('');
                         }, 5000);
                     },
                     error: function (response) {
@@ -69,7 +68,6 @@ window.addEventListener('load', function () {
                             $('#nombre').val('');
                             $('#telefono').val('');
                             $('#correo').val('');
-                            $('#mensaje').val('');
                         }, 5000);
 
                         // Set the message text.

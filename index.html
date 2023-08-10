@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feria de vivienda CANADEVI</title>
+    <title>Feria de Vivienda CANADEVI</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -59,7 +59,7 @@
                             <!-- Aquí se inyecta feedback a usuario vía Ajax -->
                             <div id="form-messages"></div>
                             <!-- /Aquí se inyecta feedback a usuario vía Ajax -->
-                            <form data-aos="fade-up" data-aos-once="true" data-aos-duration="750" data-aos-delay="500" action="mailer.php" method="POST" class="needs-validation contact-form mb-4 mb-lg-0" id="ajax-contact" novalidate>
+                            <form data-aos="fade-up" data-aos-once="true" data-aos-duration="750" data-aos-delay="500" action="./mailer.php" method="POST" class="needs-validation contact-form mb-4 mb-lg-0" id="ajax-contact" novalidate>
                                 <div class="row">
                                     <div class="col-md-12 form-floating">
                                         <input type="text" class="form-control shadow-none" id="nombre" name="nombre" placeholder="Nombre*"
@@ -73,9 +73,9 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-floating">
-                                        <input type="email" class="form-control shadow-none" id="correo" name="correo" placeholder="Email*"
+                                        <input type="email" class="form-control shadow-none" id="correo" name="correo" placeholder="Correo electrónico*"
                                             required>
-                                        <label for="correo" class="form-label">Email*</label>
+                                        <label for="correo" class="form-label">Correo electrónico*</label>
                                         <div class="valid-feedback">
                                             ¡Se ve bien!
                                         </div>
@@ -83,7 +83,7 @@
                                             Por favor introduce un correo electrónico válido.
                                         </div>
                                     </div>
-                                    <div class="col-md-12 form-floating">
+                                    <div class="col-md-12 form-floating mb-4">
                                         <input type="tel" class="form-control shadow-none" id="telefono" name="telefono" placeholder="Teléfono*"
                                             required>
                                         <label for="telefono" class="form-label">Teléfono*</label>
@@ -92,16 +92,6 @@
                                         </div>
                                         <div class="invalid-feedback">
                                             Por favor introduce un número de teléfono válido (p. ej: 6141234567).
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 form-floating mb-4">
-                                        <textarea class="form-control shadow-none" id="mensaje" name="mensaje" placeholder="Mensaje*" style="height: 100px;" required></textarea>
-                                        <label for="mensaje">Mensaje*</label>
-                                        <div class="valid-feedback">
-                                            ¡Se ve bien!
-                                        </div>
-                                        <div class="invalid-feedback">
-                                            Por favor introduce tu mensaje.
                                         </div>
                                     </div>
                                     <div class="col-md-6 my-auto">

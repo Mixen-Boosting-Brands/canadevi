@@ -78,7 +78,9 @@ header {
         min-height: inherit;
     }
 
-    .thumb-jumbotron {
+    .thumb-jumbotron,
+    form,
+    .legal {
         position: relative;
         z-index: 1;
     }
@@ -91,9 +93,6 @@ header {
     }
 
     form {
-        position: relative;
-        z-index: 1;
-
         .form-control {
             background: transparent;
             border: none;
