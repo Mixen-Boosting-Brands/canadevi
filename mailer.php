@@ -18,8 +18,6 @@
     $mail->CharSet = 'UTF-8';
 
     //Server settings
-    //Mailjet User: correos@grupogeg.com
-    //Mailjet Password: Rs0_-cusCLj5
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
