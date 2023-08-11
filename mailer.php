@@ -36,8 +36,8 @@
         try {
             //Recipients
             $mail->setFrom('noreply@feriacanadevi.mx', 'Correo automatizado'); // Has to be the same as Username
-            $mail->addAddress('a.molina@mixen.agency');     //Add a recipient
-            $mail->addAddress('luis.pando@mixen.agency');     //Add extra recipient
+            $mail->addAddress('contacto@feriacanadevi.mx');     //Add a recipient
+            // $mail->addAddress('luis.pando@mixen.agency');     //Add extra recipient
             $mail->addReplyTo($email, 'Hola Feria de Vivienda CANADEVI, necesito información.');
 
             //Content
