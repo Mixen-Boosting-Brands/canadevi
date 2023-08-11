@@ -24,8 +24,8 @@
     $mail->Username   = 'noreply@feriacanadevi.mx';                     //SMTP username
     $mail->Password   = 'pY9pzBmTYZy.';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 465;
-    $mail->SMTPDebug = 1;
+    $mail->Port       = 587;
+    // $mail->SMTPDebug = 1;
 
     if(isset($_POST['nombre'])) {
         $name = strip_tags(trim($_POST["nombre"]));
