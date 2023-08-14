@@ -27,8 +27,8 @@
     $mail->Port       = 587;
     // $mail->SMTPDebug = 1;
 
-    if(isset($_POST['nombre'])) {
-        $name = strip_tags(trim($_POST["nombre"]));
+    if(isset($_POST['name'])) {
+        $name = strip_tags(trim($_POST["name"]));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["correo"]), FILTER_SANITIZE_EMAIL);
         $phone = trim($_POST["telefono"]);
